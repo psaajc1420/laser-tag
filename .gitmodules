@@ -1,0 +1,6 @@
+[submodule "include/linked-lists"]
+	path = include/linked-lists
+	url = https://github.com/psaajc1420/linked-lists.git
+[submodule "include/strings"]
+	path = include/strings
+	url = https://github.com/psaajc1420/custom-strings.git
