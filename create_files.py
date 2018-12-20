@@ -7,6 +7,7 @@ SYNOPSIS:
 
 """
 
+import os
 from faker import Faker
 from random import choice
 from random import randint
@@ -74,11 +75,13 @@ def create_match_file(num_players):
         None
     """
 
+    dir_path = os.path.dirname(os.path.realpath(__file__))
     file_name = input("\nEnter the file name for the match: ")
+    file_path = os.path.join(dir_path, "bin", file_name)
     total_tags = input("How many tags do you want to simulate: ")
 
     start_time = datetime.now().microsecond
-    with open(file_name, "w") as file:
+    with open(file_path, "w") as file:
         file.write(total_tags+"\n")
         total_tags = int(total_tags)
         for _ in range(total_tags):
@@ -172,10 +175,16 @@ def create_team_files():
 
     faker = Faker()
 
-    num_teams = int(input("Enter the number of teams: "))
+    num_teams = input("Enter the number of teams: ")
+    num_teams = int(num_teams)
     team_names, num_players = get_team_info(num_teams)
 
-    file_names = ['{}.txt'.format(name.lower()) for name in team_names]
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+
+    file_names = [
+        os.path.join(dir_path, "bin", "{}.txt".format(name.lower()))
+        for name in team_names
+    ]
 
     id_num = 0
     for i, file_name in enumerate(file_names):

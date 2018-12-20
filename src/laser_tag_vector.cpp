@@ -5,7 +5,7 @@ void LaserTagVector::FindBestTeamScores() const {
 }
 
 const int LaserTagVector::FindTeam(std::size_t) const {
-
+  return 0;
 }   
 
 void LaserTagVector::WriteLowVerbosity(const String&) {

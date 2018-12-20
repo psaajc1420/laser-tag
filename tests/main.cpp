@@ -1,6 +1,6 @@
-#include "laser_tag.h"
-#include "laser_tag_list.h"
-#include "laser_tag_vector.h"
+#include "src/laser_tag.h"
+#include "src/laser_tag_list.h"
+#include "src/laser_tag_vector.h"
 
 int main(int argc, char** argv) {
     

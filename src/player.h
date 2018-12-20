@@ -1,7 +1,7 @@
 #ifndef DATA_STRUCTURES_PROJECTS_LASER_TAG_PLAYER_H_
 #define DATA_STRUCTURES_PROJECTS_LASER_TAG_PLAYER_H_
 
-#include "custom-string/ds_string.h"
+#include "laser-tag/strings/ds_string.h"
 
 // Creates a player that is able to keep
 // track of the number of tags and tag scores

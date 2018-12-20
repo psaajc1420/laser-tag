@@ -12,9 +12,9 @@
 #include <unordered_map>
 #include <vector>
 
-#include "custom-string/ds_string.h"
-#include "linked-lists/linked_list.h"
-#include "projects/laser-tag/game.h"
+#include "laser-tag/strings/ds_string.h"
+#include "laser-tag/linked-lists/linked_list.h"
+#include "game.h"
 #include "player.h"
 #include "team.h"
 

@@ -3,8 +3,8 @@
 
 #include <fstream>
 
-#include "custom-string/ds_string.h"
-#include "linked-lists/linked_list.h"
+#include "laser-tag/strings/ds_string.h"
+#include "laser-tag/linked-lists/linked_list.h"
 #include "player.h"
 
 class Team {
