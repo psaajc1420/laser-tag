@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.9.0)
 
 # name of the project
-project(laser-tag)
+project(lasertag)
 
 # set flags for compiler
 set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
@@ -26,8 +26,6 @@ add_executable(main.out tests/main.cpp ${SOURCES})
 
 set_target_properties(main.out
     PROPERTIES
-    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
-    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib"
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin"
 )
 
